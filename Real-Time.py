@@ -59,10 +59,4 @@ val = np.argmax(y_pred)
 Alphabet_pred = get_alpha(val)
 print(Alphabet_pred)
 
-cv2.imwrite("space_Test1.jpg", frame)
-#  frame1 = frame # True
-#  frame2 = frame # True
-
-cv2.imwrite("A_Test1.jpg", frame1)
-cv2.imwrite("A_Test2.jpg", frame2)
 
