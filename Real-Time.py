@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import cv2
 
+# Importing the model Which is trained on Sign Language Detection dataset.
 bring_model = tf.keras.models.load_model("main_model_12e.h5")
 
 def get_alpha(val):
@@ -22,6 +23,7 @@ def get_alpha(val):
   
     return "key doesn't exist"
 
+''' Imp NOTE :- Press Q button in order to close the windoe of the WebCam '''
 def capture_pic():
     
     cap = cv2.VideoCapture(0)
@@ -39,6 +41,7 @@ def capture_pic():
     cap.release()
     cv2.destroyAllWindows()
     
+    # Showing the image which is captured by the WebCam.
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     plt.imshow(frame)
     plt.xticks([])
