@@ -77,7 +77,7 @@ def con(image):
         eb = image.shape[0]
     
     
-    if i % 5 == 0:
+    if i % 2 == 0:
         j = j + 1
         if j % 3 == 0:
             b_c = (0, 0, 255)
