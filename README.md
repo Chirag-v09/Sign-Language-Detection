@@ -21,11 +21,10 @@ NOTE:- Here's an important note that when you do real-time predictions (by using
 
 Real Done.py file is the file for computer vision. Below are some screenshots of that file in running using the trained model on American Sign Language Detection datasets.
 
-![](Capture2.jpg)
-
-![](Capture1.jpg)
+<img src="Capture2.jpg" width=50% height=50%>
+<img src="Capture1.jpg" width=50% height=50%>
 
 Now, Finally my project is deployed on mobile device
 
-<img src="H_pred.png" width=50% height=50%>
-<img src="W_pred.png" width=50% height=50%>
+<img src="H_pred.png" width=25% height=25%>
+<img src="W_pred.png" width=25% height=25%>
