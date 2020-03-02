@@ -27,5 +27,5 @@ Real Done.py file is the file for computer vision. Below are some screenshots of
 
 Now, Finally my project is deployed on mobile device
 
-![](H_pred.png){:height="50%" width="50%"}
-![](W_pred.png){:height="50%" width="50%"}
+![](H_pred.png | width=48)
+![](W_pred.png)
