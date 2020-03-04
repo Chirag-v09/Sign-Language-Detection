@@ -1,4 +1,6 @@
 # Sign-Language-Detection
+## Mobile Deployment Done
+### Working on Web Deployment
 
 Real-Time Sign Language Detection Project using a WebCam.
 Currently working on this project and after completed then move it to mobile devices.
