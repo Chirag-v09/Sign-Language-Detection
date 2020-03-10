@@ -1,6 +1,6 @@
 # Sign-Language-Detection
 ## Mobile Deployment Done
-### Working on Web Deployment
+## Web Deployment Done
 
 Real-Time Sign Language Detection Project using a WebCam.
 Currently working on this project and after completed then move it to mobile devices.
@@ -30,3 +30,9 @@ Now, Finally my project is deployed on mobile device
 
 <img src="H_pred.png" width=25% height=25%>
 <img src="W_pred.png" width=25% height=25%>
+
+Now, Finally I deploy my project on WebServer
+
+<img src="WebServer1.png" width=50% height=50%>
+<img src="WebServer2.png" width=50% height=50>
+<img src="WebServer3.png" width=50% height=50%>
