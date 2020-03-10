@@ -13,7 +13,7 @@ import pandas as pd
 import cv2
 import imutils
 
-bring_model = tf.keras.models.load_model("") # Load your trained model of Deep Learning
+bring_model = tf.keras.models.load_model("sld_model.h5")
 
 def get_alpha(val):
     names = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5,'G': 6, 'H': 7, 'I': 8, 'J': 9, 'K': 10, 'L': 11, 'M': 12, 'N': 13, 'O': 14, 'P': 15, 'Q': 16, 'R': 17, 'S': 18, 'T': 19, 'U': 20, 'V': 21, 'W': 22, 'X': 23, 'Y': 24, 'Z': 25, 'DEL': 26, 'NOTHING': 27, 'SPACE': 28}
@@ -91,7 +91,6 @@ def con(image):
     return image, mask, pre_image
 
 
-# Press q button to exit from the video Window
 string = []
 try:
     cap = cv2.VideoCapture(0)
@@ -131,10 +130,15 @@ try:
         alp_image = np.zeros((150, 640, 3), np.uint8)
         alp_image = cv2.putText(alp_image, Alphabet_pred, (20, 100), font, 3, (255, 255, 255), 5)
         alp_image = cv2.putText(alp_image, string_text, (20, 140), font, 1, (255, 255, 255), 1)
+        #frame = cv2.putText(frame, Alphabet_pred, (10, 460), font, 2, (255, 255, 255), 5)
         
         res = np.concatenate((frame, alp_image), axis = 0)
         frame = cv2.line(res, (0, 480), (640, 480), (255, 255, 255), 3)
-        cv2.imshow("Video", res)
+        cv2.imshow("Image", res)
+        #cv2.imshow("Alphabet", alp_image)
+        #cv2.imshow("Image1", put_image)
+        #cv2.imshow("hello", im)
+        #cv2.imshow("Image2", mask)
         
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
