@@ -33,6 +33,6 @@ Now, Finally my project is deployed on mobile device
 
 Now, Finally I deploy my project on WebServer
 
-<img src="WebServer1.png" width=50% height=50%>
-<img src="WebServer2.png" width=50% height=50>
-<img src="WebServer3.png" width=50% height=50%>
+<img src="WebServer1.JPG" width=50% height=50%>
+<img src="WebServer2.JPG" width=50% height=50%>
+<img src="WebServer3.JPG" width=50% height=50%>
