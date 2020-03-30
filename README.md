@@ -3,7 +3,7 @@
 ## Web Deployment Done
 
 Real-Time Sign Language Detection Project using a WebCam.
-Currently working on this project and after completed then move it to mobile devices.
+This Project is done and I deploy it on both Mobile and Web Server.
 
 Download link for dataset: https://www.kaggle.com/grassknoted/asl-alphabet/kernels
 
