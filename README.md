@@ -9,7 +9,7 @@ Download link for dataset: https://www.kaggle.com/grassknoted/asl-alphabet/kerne
 
 Here I using the pre-trained model i.e Mobilenet_v2
 
-Due to Hardware restriction, I train Model on Kaggle playground.
+Due to Hardware restriction, I train tghe Model on Kaggle playground.
 Validation Accuracy = 0.9947917 and Validation Loss = 0.03621217922773212
 
 Main File :- "Sign Language Detection (kaggle).ipynb" and "Real Done.py"
