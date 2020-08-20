@@ -92,6 +92,7 @@ def con(image):
 
 
 string = []
+string_text = ''
 try:
     cap = cv2.VideoCapture(0)
     while(cap.isOpened()):
@@ -119,17 +120,26 @@ try:
         Alphabet_pred = get_alpha(val)
         font = cv2.FONT_HERSHEY_COMPLEX
         
-        if(Alphabet_pred != 'NOTHING' and Alphabet_pred != 'DEL'):
+        if(Alphabet_pred != 'NOTHING' and Alphabet_pred != 'DEL' and Alphabet_pred != 'SPACE'):
             string.append(Alphabet_pred)
             string_text = ''.join(string)
         if(Alphabet_pred == 'DEL'):
             if (string):
                 string = string[:-1]
                 string_text = ''.join(string)
+        if(Alphabet_pred == 'SPACE'):
+            string.append(" ")
+            string_text = ''.join(string)
+        
+        put_string = ''
+        if len(string_text) > 15:
+            put_string = '...' + string_text[-15: ]
+        else:
+            put_string = string_text
         
         alp_image = np.zeros((150, 640, 3), np.uint8)
         alp_image = cv2.putText(alp_image, Alphabet_pred, (20, 100), font, 3, (255, 255, 255), 5)
-        alp_image = cv2.putText(alp_image, string_text, (20, 140), font, 1, (255, 255, 255), 1)
+        alp_image = cv2.putText(alp_image, put_string, (20, 140), font, 1, (255, 255, 255), 1)
         #frame = cv2.putText(frame, Alphabet_pred, (10, 460), font, 2, (255, 255, 255), 5)
         
         res = np.concatenate((frame, alp_image), axis = 0)
