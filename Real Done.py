@@ -44,7 +44,7 @@ def con(image):
     mask = cv2.inRange(hsv, lower_skin, upper_skin)
     
     mask = cv2.erode(mask, None, iterations = 1)
-    mask = cv2.dilate(mask, None, iterations = 7)
+    mask = cv2.dilate(mask, None, iterations = 9)
     
     cnts = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     
@@ -98,6 +98,11 @@ try:
     while(cap.isOpened()):
         ret, frame = cap.read()
         im = frame
+        im2 = frame
+        
+        im2 = cv2.resize(im2, (224, 224), interpolation = cv2.INTER_AREA) / 255.0
+        y_pred = bring_model.predict(im2.reshape((1, ) + im2.shape))
+        
         frame1, mask, pre_image = con(frame)
         
         if not isinstance(frame1, np.ndarray):
@@ -114,8 +119,6 @@ try:
         frame = cv2.line(frame, (70, 0), (70, 70), (255, 255, 255), 2)
         frame = cv2.line(frame, (0, 70), (70, 70), (255, 255, 255), 2)
         
-        pre_image = cv2.resize(pre_image, (224, 224), interpolation = cv2.INTER_AREA) / 255.0
-        y_pred = bring_model.predict(pre_image.reshape((1, ) + pre_image.shape))
         val = np.argmax(y_pred)
         Alphabet_pred = get_alpha(val)
         font = cv2.FONT_HERSHEY_COMPLEX
@@ -147,8 +150,8 @@ try:
         cv2.imshow("Image", res)
         #cv2.imshow("Alphabet", alp_image)
         #cv2.imshow("Image1", put_image)
+        cv2.imshow("Image2", mask)
         #cv2.imshow("hello", im)
-        #cv2.imshow("Image2", mask)
         
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
