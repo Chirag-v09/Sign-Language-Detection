@@ -2,7 +2,7 @@
 ##  Deployment Done
 ## Web Deployment Done
 
-Real-Time Sign Language Detection Project using a WebCam.
+Real-Time Sign Language Detection Project using a OpenCV.
 This Project is done and I deploy it on both  and Web Server.
 
 Download link for dataset: https://www.kaggle.com/grassknoted/asl-alphabet/kernels
