@@ -27,20 +27,20 @@ Real Done.py file is the file for computer vision. Below are some screenshots of
 <img src="Capture1.jpg" width=50% height=50%>
 
 ## 
-Now, Finally my project is deployed on  device
+Now, Finally my project is deployed on *Mobile device*
 
 <img src="H_pred.png" width=25% height=25%>
 <img src="W_pred.png" width=25% height=25%>
 
 ## 
-Now, Finally I deploy my project on WebServer
+Now, Finally I deploy my project on WebServer - *ONLINE*
 
 <img src="WebServer1.JPG" width=50% height=50%>
 <img src="WebServer2.JPG" width=50% height=50%>
 <img src="WebServer3.JPG" width=50% height=50%>
 
 ##
-After this I apply Object Detection on it using RCNN Architecture
+After this I apply *Object Detection* on it using RCNN Architecture
 
 <img src="ob_Capture.PNG" width=50% height=50%>
 <img src="ob_Capture1.PNG" width=50% height=50%>
