@@ -1,3 +1,5 @@
+# Same as of racoon detection
+
 import os
 import glob
 import pandas as pd
